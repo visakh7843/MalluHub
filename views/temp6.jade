@@ -1,0 +1,268 @@
+doctype html
+link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css', integrity='sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u', crossorigin='anonymous')
+// Optional theme
+link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css', integrity='sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp', crossorigin='anonymous')
+// Latest compiled and minified JavaScript
+script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js', integrity='sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa', crossorigin='anonymous')
+html
+  title MalluHub
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='stylesheet', href='https://www.w3schools.com/w3css/4/w3.css')
+    link(rel='stylesheet', href='https://www.w3schools.com/lib/w3-theme-black.css')
+    link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Roboto')
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
+    style.
+      html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+    meta(http-equiv='Content-Type', content='text/html; charset=utf-8')
+    style.
+      @font-face {
+      font-family: 'Malayalam';
+      src: url('../fonts/meera.eot');
+      src: url('../fonts/meera.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/meera.woff') format('woff'),
+      url('../fonts/meera.ttf') format('truetype'),
+      url('../fonts/meera.svg#Malayalam') format('svg');
+      font-weight: normal;
+      font-style: normal;
+      }
+  body
+    // Navbar
+    .w3-top
+      .w3-bar.w3-theme.w3-top.w3-left-align.w3-large
+        a.w3-bar-item.w3-button.w3-right.w3-hide-large.w3-hover-white.w3-large.w3-theme-l1(href='javascript:void(0)', onclick='w3_open()')
+          i.fa.fa-bars
+        a.w3-bar-item.w3-button.w3-theme-l1 MalluHub
+        a.w3-bar-item.w3-button.w3-hide-small.w3-hover-white(href='#') Home
+        a.w3-bar-item.w3-button.w3-hide-small.w3-hover-white(href='#') About
+        a.w3-bar-item.w3-button.w3-hide-small.w3-hover-white(href='#') Contact
+    // Sidebar
+    nav#mySidebar.w3-sidebar.w3-bar-block.w3-collapse.w3-large.w3-theme-l5.w3-animate-left(style='z-index:3;width:250px;margin-top:43px;')
+      a.w3-right.w3-xlarge.w3-padding-large.w3-hover-black.w3-hide-large(href='javascript:void(0)', onclick='w3_close()', title='Close Menu')
+        i.fa.fa-remove
+      h4.w3-bar-item
+        b Lessons
+      a.w3-bar-item.w3-button.w3-hover-black(href='/temp1#') Lesson1
+      a.w3-bar-item.w3-button.w3-hover-black(href='/temp2#') Lesson 2
+      a.w3-bar-item.w3-button.w3-hover-black(href='/temp3#') Lesson 3
+      a.w3-bar-item.w3-button.w3-hover-black(href='/temp4') Lesson 4
+      a.w3-bar-item.w3-button.w3-hover-black(href='/temp5') Lesson 5
+      a.w3-bar-item.w3-button.w3-black(href='/temp6') Lesson 6
+      a.w3-bar-item.w3-button.w3-hover-black(href='/temp7') Lesson 7
+      a.w3-bar-item.w3-button.w3-hover-black(href='/temp8') Lesson 8
+      a.w3-bar-item.w3-button.w3-hover-black(href='/temp9') Lesson 9
+      a.w3-bar-item.w3-button.w3-hover-black(href='/temp10') Lesson 10
+      a.w3-bar-item.w3-button.w3-hover-black(href='/temp11') Lesson 11
+    // Overlay effect when opening sidebar on small screens
+    #myOverlay.w3-overlay.w3-hide-large(onclick='w3_close()', style='cursor:pointer', title='close side menu')
+    // Main content: shift it to the right by 250 pixels when the sidebar is visible
+    .w3-main(style='margin-left:250px')
+      .w3-row.w3-padding-64
+      .w3-row
+        .w3-twothird.w3-container
+          h1.w3-text-teal Lesson 16
+          p
+            font(size='5')
+              | Malayalam letter:-
+          p(align='center')
+            font(size='8')
+              | &#x0D15
+          p
+            font(size='5')
+              | Corresponding English translation:-
+          p(align='center')
+            font(size='6')
+              | Ka
+          p
+            font(size='5')
+              | Example:-
+          p(align='center')
+            font(size='6')
+              | കടൽ
+          p
+            font(size='5')
+              | Malayalam translation:-
+          p(align='center')
+            font(size='6')
+              | Kadal
+          p
+            font(size='5')
+              | English translation:-
+          p(align='center')
+            font(size='6')
+              | SEA
+      .w3-row.w3-padding-64
+        .w3-twothird.w3-container
+          h1.w3-text-teal Lesson 17
+          p
+            font(size='5')
+              | Malayalam letter:-
+          p(align='center')
+            font(size='8')
+              | &#x0D16
+          p
+            font(size='5')
+              | Corresponding English translation:-
+          p(align='center')
+            font(size='6')
+              | Kha
+          p
+            font(size='5')
+              | Example:-
+          p(align='center')
+            font(size='6')
+              | ‌മുഖം
+          p
+            font(size='5')
+              | Malayalam translation
+          p(align='center')
+            font(size='6')
+              | Mugham
+          p
+            font(size='5')
+              | English translation:-
+          p(align='center')
+            font(size='6')
+              | FACE
+      .w3-row.w3-padding-64
+        .w3-twothird.w3-container
+          h1.w3-text-teal Lesson 18
+          p
+            font(size='5')
+              | Malayalam letter:-
+          p(align='center')
+            font(size='8')
+              | &#x0D17
+          p
+            font(size='5')
+              | Corresponding English translation:-
+          p(align='center')
+            font(size='6')
+              | Ga
+          p
+            font(size='5')
+              | Example:-
+          p(align='center')
+            font(size='6')
+              | ഗണപതി
+          p
+            font(size='5')
+              | Malayalam translation
+          p(align='center')
+            font(size='6')
+              | Ganapathy
+          p
+            font(size='5')
+              | English translation:-
+          p(align='center')
+            font(size='6')
+              | GANAPATHY
+      .w3-row.w3-padding-64
+        .w3-twothird.w3-container
+          h1.w3-text-teal Lesson 19
+          p
+            font(size='5')
+              | Malayalam letter:-
+          p(align='center')
+            font(size='8')
+              | &#x0D18
+          p
+            font(size='5')
+              | Corresponding English translation:-
+          p(align='center')
+            font(size='6')
+              | Gha
+          p
+            font(size='5')
+              | Example:-
+          p(align='center')
+            font(size='6')
+              | ഘടികാരം
+          p
+            font(size='5')
+              | Malayalam translation
+          p(align='center')
+            font(size='6')
+              | Ghadikaram
+          p
+            font(size='5')
+              | English translation:-
+          p(align='center')
+            font(size='6')
+              | CLOCK
+      .w3-row.w3-padding-64
+        .w3-twothird.w3-container
+          h1.w3-text-teal Lesson 20
+          p
+            font(size='5')
+              | Malayalam letter:-
+          p(align='center')
+            font(size='8')
+              | &#x0D19
+          p
+            font(size='5')
+              | Corresponding English translation:-
+          p(align='center')
+            font(size='6')
+              | Nga
+          p
+            font(size='5')
+              | Example:-
+          p(align='center')
+            font(size='6')
+              | തേങ്ങ
+          p
+            font(size='5')
+              | Malayalam translation
+          p(align='center')
+            font(size='6')
+              | Thenga
+          p
+            font(size='5')
+              | English translation:-
+          p(align='center')
+            font(size='6')
+              | COCONUT
+      // Pagination
+      .w3-center.w3-padding-32
+        .w3-bar
+          a.w3-button.w3-hover-black(href='/temp1#') 1
+          a.w3-button.w3-hover-black(href='/temp2#') 2
+          a.w3-button.w3-hover-black(href='/temp3#') 3
+          a.w3-button.w3-hover-black(href='/temp4') 4
+          a.w3-button.w3-hover-black(href='/temp5') 5
+          a.w3-button.w3-black(href='/temp6') 6
+          a.w3-button.w3-hover-black(href='/temp7') 7
+          a.w3-button.w3-hover-black(href='/temp8') 8
+          a.w3-button.w3-hover-black(href='/temp9') 9
+          a.w3-button.w3-hover-black(href='/temp10') 10
+          a.w3-button.w3-hover-black(href='/temp11') 11
+      footer#myFooter
+        .w3-container.w3-theme-l2.w3-padding-32
+          h4 Footer
+        .w3-container.w3-theme-l1
+          p
+            | Powered by 
+            a(href='https://www.w3schools.com/w3css/default.asp', target='_blank') w3.css
+      // END MAIN
+    script.
+      // Get the Sidebar
+      var mySidebar = document.getElementById("mySidebar");
+      // Get the DIV with overlay effect
+      var overlayBg = document.getElementById("myOverlay");
+      // Toggle between showing and hiding the sidebar, and add overlay effect
+      function w3_open() {
+      if (mySidebar.style.display === 'block') {
+      mySidebar.style.display = 'none';
+      overlayBg.style.display = "none";
+      } else {
+      mySidebar.style.display = 'block';
+      overlayBg.style.display = "block";
+      }
+      }
+      // Close the sidebar with the close button
+      function w3_close() {
+      mySidebar.style.display = "none";
+      overlayBg.style.display = "none";
+      }

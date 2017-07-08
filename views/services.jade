@@ -1,0 +1,71 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width')
+    meta(name='description', content='Affordable and professional web design')
+    meta(name='keywords', content='web design, affordable web design, professional web design')
+    meta(name='author', content='Brad Traversy')
+    title Acme Web Deisgn | Services
+    link(rel='stylesheet', href='./css/style.css')
+  body
+    header
+      .container
+        #branding
+          h1
+            span.highlight Acme
+            |  Web Design
+        nav
+          ul
+            li
+              a(href='/') Home
+            li
+              a(href='/about') About
+            li.current
+              a(href='/services') Services
+    section#newsletter
+      .container
+        h1 Subscribe To Our Newsletter
+        form
+          input(type='email', placeholder='Enter Email...')
+          button.button_1(type='submit') Subscribe
+    section#main
+      .container
+        article#main-col
+          h1.page-title Services
+          ul#services
+            li
+              h3 Website Design
+              p
+                | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet ultricies at, vulputate id lorem. Nulla facilisi.
+              p Pricing: $1,000 - $3,000
+            li
+              h3 Website Maintenance
+              p
+                | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet ultricies at, vulputate id lorem. Nulla facilisi.
+              p Pricing: $250 per month
+            li
+              h3 Website Hosting
+              p
+                | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet ultricies at, vulputate id lorem. Nulla facilisi.
+              p Pricing: $25 per month
+        aside#sidebar
+          .dark
+            h3 Get A Quote
+            form.quote
+              div
+                label Name
+                br
+                input(type='text', placeholder='Name')
+              div
+                label Email
+                br
+                input(type='email', placeholder='Emial Address')
+              div
+                label Message
+                br
+                textarea(placeholder='Message')
+              button.button_1(type='submit') Send
+    footer
+      p Acme Web Deisgn, Copyright © 2017
+

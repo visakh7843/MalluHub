@@ -1,29 +1,59 @@
-extends layout
-block content
-    .jumbotron
+doctype html
+html(lang='ml')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width')
+    meta(name='description', content='Affordable and professional web design')
+    meta(name='keywords', content='web design, affordable web design, professional web design')
+    meta(name='author', content='Brad Traversy')
+    title Mallu Hub | Welcome
+    link(rel='stylesheet', href='/css/style.css')
+    link(rel='stylesheet', href='./font/font-awesome/css/font-awesome.min.css')
+  body
+    header
       .container
-        h1 #{title}
-        p
-          | This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.
-        p
-          a.btn.btn-primary.btn-lg(href='#', role='button') Learn more »
-    .container
-      .row
-        .col-md-4
-          h2 Heading
+        #branding
+          h1
+            span.highlight Mallu
+            | Hub
+        nav
+          ul
+            li.current
+              a(href='/') Home
+            li
+              a(href='/about') About
+            li
+              a(href='/services') Services
+    section#showcase
+      .container
+        h1  നമസ്കാരം 
+        p Now lets learn some malayalam!!!!
+        br
+        br
+        a.button_main(href='/temp1') Lets get started!!
+    section#newsletter
+      .container
+        h1 Subscribe To Our Newsletter
+        form
+          input(type='email', placeholder='Enter Email...')
+          button.button_1(type='submit') Subscribe
+    section#boxes
+      .container
+        .box
+          img(src='./img/logo_html.png')
+          h3 HTML5 Markup
           p
-            | Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet ultricies
+        .box
+          img(src='./img/logo_css.png')
+          h3 CSS3 Styling
           p
-            a.btn.btn-default(href='#', role='button') View details »
-        .col-md-4
-          h2 Heading
+            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet ultricies
+        .box
+          img(src='./img/logo_brush.png')
+          h3 Graphic Design
           p
-            | Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
-          p
-            a.btn.btn-default(href='#', role='button') View details »
-        .col-md-4
-          h2 Heading
-          p
-            | Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
-          p
-            a.btn.btn-default(href='#', role='button') View details »
+            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet ultricies
+    footer
+      p MalluHub, Copyright © 2017
+
