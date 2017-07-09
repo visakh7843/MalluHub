@@ -1,0 +1,17 @@
+{
+  "name": "MalluHub",
+  "version": "1.0.0",
+  "description": "Web app to learn malayalam using nodejs",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Visakh Ajith",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "*",
+    "express": "*",
+    "jade": "*",
+    "nodemailer": "*"
+  }
+}
