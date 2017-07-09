@@ -28,23 +28,11 @@ html
       font-style: normal;
       }
   body
-    // Navbar
-    .w3-top
-      .w3-bar.w3-theme.w3-top.w3-left-align.w3-large
-        a.w3-bar-item.w3-button.w3-right.w3-hide-large.w3-hover-white.w3-large.w3-theme-l1(href='javascript:void(0)', onclick='w3_open()')
-          i.fa.fa-bars
-        a.w3-bar-item.w3-button.w3-theme-l1 MalluHub
-        a.w3-bar-item.w3-button.w3-hide-small.w3-hover-white(href='#') Home
-        a.w3-bar-item.w3-button.w3-hide-small.w3-hover-white(href='#') About
-        a.w3-bar-item.w3-button.w3-hide-small.w3-hover-white(href='#') Contact
     // Sidebar
-    nav#mySidebar.w3-sidebar.w3-bar-block.w3-collapse.w3-large.w3-theme-l5.w3-animate-left(style='z-index:3;width:250px;margin-top:43px;')
-      a.w3-right.w3-xlarge.w3-padding-large.w3-hover-black.w3-hide-large(href='javascript:void(0)', onclick='w3_close()', title='Close Menu')
-        i.fa.fa-remove
-      h4.w3-bar-item
-        b Lessons
-      a.w3-bar-item.w3-button.w3-hover-black(href='/temp1#') Lesson 1
-      a.w3-bar-item.w3-button.w3-hover-black(href='/temp2#') Lesson 2
+    #mySidebar.w3-sidebar.w3-bar-block.w3-card-2.w3-animate-left(style='display:none')
+      button.w3-bar-item.w3-button.w3-large(onclick='w3_close()') Close ×
+      a.w3-bar-item.w3-button.w3-hover-black(href='/temp1') Lesson1
+      a.w3-bar-item.w3-button.w3-hover-black(href='/temp2') Lesson 2
       a.w3-bar-item.w3-button.w3-hover-black(href='/temp3') Lesson 3
       a.w3-bar-item.w3-button.w3-hover-black(href='/temp4') Lesson 4
       a.w3-bar-item.w3-button.w3-hover-black(href='/temp5') Lesson 5
@@ -54,413 +42,434 @@ html
       a.w3-bar-item.w3-button.w3-hover-black(href='/temp9') Lesson 9
       a.w3-bar-item.w3-button.w3-hover-black(href='/temp10') Lesson 10
       a.w3-bar-item.w3-button.w3-black(href='/temp11') Lesson 11
-    // Overlay effect when opening sidebar on small screens
-    #myOverlay.w3-overlay.w3-hide-large(onclick='w3_close()', style='cursor:pointer', title='close side menu')
-    // Main content: shift it to the right by 250 pixels when the sidebar is visible
-    .w3-main(style='margin-left:250px')
-      .w3-row.w3-padding-64
-      .w3-row
-        .w3-twothird.w3-container
-          h1.w3-text-teal Lesson 41
-          p
-            font(size='5')
-              | Malayalam letter:-
-          p(align='center')
-            font(size='8')
-              | &#x0D2F
-          p
-            font(size='5')
-              | Corresponding English translation:-
-          p(align='center')
-            font(size='6')
-              | Ya
-          p
-            font(size='5')
-              | Example:-
-          p(align='center')
-            font(size='6')
-              | മുയൽ
-          p
-            font(size='5')
-              | Malayalam translation:-
-          p(align='center')
-            font(size='6')
-              | Muyal
-          p
-            font(size='5')
-              | English translation:-
-          p(align='center')
-            font(size='6')
-              | RABBIT
-      .w3-row.w3-padding-64
-        .w3-twothird.w3-container
-          h1.w3-text-teal Lesson 42
-          p
-            font(size='5')
-              | Malayalam letter:-
-          p(align='center')
-            font(size='8')
-              | &#x0D30
-          p
-            font(size='5')
-              | Corresponding English translation:-
-          p(align='center')
-            font(size='6')
-              | Ra
-          p
-            font(size='5')
-              | Example:-
-          p(align='center')
-            font(size='6')
-              | കസേര
-          p
-            font(size='5')
-              | Malayalam translation
-          p(align='center')
-            font(size='6')
-              | Kasera
-          p
-            font(size='5')
-              | English translation:-
-          p(align='center')
-            font(size='6')
-              | CHAIR
-      .w3-row.w3-padding-64
-        .w3-twothird.w3-container
-          h1.w3-text-teal Lesson 43
-          p
-            font(size='5')
-              | Malayalam letter:-
-          p(align='center')
-            font(size='8')
-              | &#x0D31
-          p
-            font(size='5')
-              | Corresponding English translation:-
-          p(align='center')
-            font(size='6')
-              | Rra
-          p
-            font(size='5')
-              | Example:-
-          p(align='center')
-            font(size='6')
-              | ലോറി
-          p
-            font(size='5')
-              | Malayalam translation
-          p(align='center')
-            font(size='6')
-              | Lorry
-          p
-            font(size='5')
-              | English translation:-
-          p(align='center')
-            font(size='6')
-              | TRUCK
-      .w3-row.w3-padding-64
-        .w3-twothird.w3-container
-          h1.w3-text-teal Lesson 44
-          p
-            font(size='5')
-              | Malayalam letter:-
-          p(align='center')
-            font(size='8')
-              | &#x0D32
-          p
-            font(size='5')
-              | Corresponding English translation:-
-          p(align='center')
-            font(size='6')
-              | La
-          p
-            font(size='5')
-              | Example:-
-          p(align='center')
-            font(size='6')
-              | മല
-          p
-            font(size='5')
-              | Malayalam translation
-          p(align='center')
-            font(size='6')
-              | Mala
-          p
-            font(size='5')
-              | English translation:-
-          p(align='center')
-            font(size='6')
-              | MOUNTAIN
-      .w3-row.w3-padding-64
-        .w3-twothird.w3-container
-          h1.w3-text-teal Lesson 45
-          p
-            font(size='5')
-              | Malayalam letter:-
-          p(align='center')
-            font(size='8')
-              | &#x0D33
-          p
-            font(size='5')
-              | Corresponding English translation:-
-          p(align='center')
-            font(size='6')
-              | Lla
-          p
-            font(size='5')
-              | Example:-
-          p(align='center')
-            font(size='6')
-              | തവള
-          p
-            font(size='5')
-              | Malayalam translation
-          p(align='center')
-            font(size='6')
-              | Thavala
-          p
-            font(size='5')
-              | English translation:-
-          p(align='center')
-            font(size='6')
-              | FROG
-      .w3-row.w3-padding-64
-        .w3-twothird.w3-container
-          h1.w3-text-teal Lesson 46
-          p
-            font(size='5')
-              | Malayalam letter:-
-          p(align='center')
-            font(size='8')
-              | &#x0D34
-          p
-            font(size='5')
-              | Corresponding English translation:-
-          p(align='center')
-            font(size='6')
-              | Zha
-          p
-            font(size='5')
-              | Example:-
-          p(align='center')
-            font(size='6')
-              | മഴ
-          p
-            font(size='5')
-              | Malayalam translation
-          p(align='center')
-            font(size='6')
-              | Mazha
-          p
-            font(size='5')
-              | English translation:-
-          p(align='center')
-            font(size='6')
-              | RAIN
-      .w3-row.w3-padding-64
-        .w3-twothird.w3-container
-          h1.w3-text-teal Lesson 47
-          p
-            font(size='5')
-              | Malayalam letter:-
-          p(align='center')
-            font(size='8')
-              | &#x0D35
-          p
-            font(size='5')
-              | Corresponding English translation:-
-          p(align='center')
-            font(size='6')
-              | Va
-          p
-            font(size='5')
-              | Example:-
-          p(align='center')
-            font(size='6')
-              | പാവ
-          p
-            font(size='5')
-              | Malayalam translation
-          p(align='center')
-            font(size='6')
-              | Paava
-          p
-            font(size='5')
-              | English translation:-
-          p(align='center')
-            font(size='6')
-              | DOLL
-      .w3-row.w3-padding-64
-        .w3-twothird.w3-container
-          h1.w3-text-teal Lesson 48
-          p
-            font(size='5')
-              | Malayalam letter:-
-          p(align='center')
-            font(size='8')
-              | &#x0D36
-          p
-            font(size='5')
-              | Corresponding English translation:-
-          p(align='center')
-            font(size='6')
-              | Sha
-          p
-            font(size='5')
-              | Example:-
-          p(align='center')
-            font(size='6')
-              | ശലഭം
-          p
-            font(size='5')
-              | Malayalam translation
-          p(align='center')
-            font(size='6')
-              | Shalabham
-          p
-            font(size='5')
-              | English translation:-
-          p(align='center')
-            font(size='6')
-              | BUTTERFLY
-      .w3-row.w3-padding-64
-        .w3-twothird.w3-container
-          h1.w3-text-teal Lesson 49
-          p
-            font(size='5')
-              | Malayalam letter:-
-          p(align='center')
-            font(size='8')
-              | &#x0D37
-          p
-            font(size='5')
-              | Corresponding English translation:-
-          p(align='center')
-            font(size='6')
-              | Shsha
-          p
-            font(size='5')
-              | Example:-
-          p(align='center')
-            font(size='6')
-              | ഷർട്ട്
-          p
-            font(size='5')
-              | Malayalam translation
-          p(align='center')
-            font(size='6')
-              | Shirt
-          p
-            font(size='5')
-              | English translation:-
-          p(align='center')
-            font(size='6')
-              | SHIRT
-      .w3-row.w3-padding-64
-        .w3-twothird.w3-container
-          h1.w3-text-teal Lesson 50
-          p
-            font(size='5')
-              | Malayalam letter:-
-          p(align='center')
-            font(size='8')
-              | &#x0D38
-          p
-            font(size='5')
-              | Corresponding English translation:-
-          p(align='center')
-            font(size='6')
-              | Sa
-          p
-            font(size='5')
-              | Example:-
-          p(align='center')
-            font(size='6')
-              | സർപ്പം
-          p
-            font(size='5')
-              | Malayalam translation
-          p(align='center')
-            font(size='6')
-              | Sarppam
-          p
-            font(size='5')
-              | English translation:-
-          p(align='center')
-            font(size='6')
-              | SNAKE
-      .w3-row.w3-padding-64
-        .w3-twothird.w3-container
-          h1.w3-text-teal Lesson 51
-          p
-            font(size='5')
-              | Malayalam letter:-
-          p(align='center')
-            font(size='8')
-              | &#x0D39
-          p
-            font(size='5')
-              | Corresponding English translation:-
-          p(align='center')
-            font(size='6')
-              | Ha
-          p
-            font(size='5')
-              | Example:-
-          p(align='center')
-            font(size='6')
-              | സിംഹം
-          p
-            font(size='5')
-              | Malayalam translation
-          p(align='center')
-            font(size='6')
-              | Simham
-          p
-            font(size='5')
-              | English translation:-
-          p(align='center')
-            font(size='6')
-              | LION
-      // Pagination
-      .w3-center.w3-padding-32
-        .w3-bar
-          a.w3-button.w3-hover-black(href='/temp1#') 1
-          a.w3-button.w3-hover-black(href='/temp2#') 2
-          a.w3-button.w3-hover-black(href='/temp3#') 3
-          a.w3-button.w3-hover-black(href='/temp4') 4
-          a.w3-button.w3-hover-black(href='/temp5') 5
-          a.w3-button.w3-hover-black(href='/temp6') 6
-          a.w3-button.w3-hover-black(href='/temp7') 7
-          a.w3-button.w3-hover-black(href='/temp8') 8
-          a.w3-button.w3-hover-black(href='/temp9') 9
-          a.w3-button.w3-hover-black(href='/temp10') 10
-          a.w3-button.w3-black(href='/temp11') 11
-      footer#myFooter
-        .w3-container.w3-theme-l2.w3-padding-32
-          h4 Footer
-        .w3-container.w3-theme-l1
-          p
-            | Powered by 
-            a(href='https://www.w3schools.com/w3css/default.asp', target='_blank') w3.css
-      // END MAIN
-    script.
-      // Get the Sidebar
-      var mySidebar = document.getElementById("mySidebar");
-      // Get the DIV with overlay effect
-      var overlayBg = document.getElementById("myOverlay");
-      // Toggle between showing and hiding the sidebar, and add overlay effect
-      function w3_open() {
-      if (mySidebar.style.display === 'block') {
-      mySidebar.style.display = 'none';
-      overlayBg.style.display = "none";
-      } else {
-      mySidebar.style.display = 'block';
-      overlayBg.style.display = "block";
-      }
-      }
-      // Close the sidebar with the close button
-      function w3_close() {
-      mySidebar.style.display = "none";
-      overlayBg.style.display = "none";
-      }
+    // Navbar
+    #main(zclass='w3-main')
+      .w3-bar.w3-black
+        button.w3-bar-item.w3-button.w3-teal(class='w3-mobile,w3-button w3-xlarge,', onclick='w3_open()') ☰
+        span.w3-bar-item.w3-button.w3-mobile MalluHub
+        a.w3-bar-item.w3-button.w3-mobile(href='#', style='text-decoration: none;') Home
+        button.w3-bar-item.w3-button.w3-mobile(onclick="document.getElementById('id01').style.display='block'") Contact
+      // Main content: shift it to the right by 250 pixels when the sidebar is visible
+      .w3-main(style='margin-left:250px')
+        .w3-row.w3-padding-64
+        .w3-row
+          .w3-twothird.w3-container
+            h1.w3-text-teal Chapter 41
+            p
+              font(size='5')
+                | Malayalam letter:-
+            p(align='center')
+              font(size='8')
+                | &#x0D2F
+            p
+              font(size='5')
+                | Corresponding English translation:-
+            p(align='center')
+              font(size='6')
+                | Ya
+            p
+              font(size='5')
+                | Example:-
+            p(align='center')
+              font(size='6')
+                | മുയൽ
+            p
+              font(size='5')
+                | Malayalam translation:-
+            p(align='center')
+              font(size='6')
+                | Muyal
+            p
+              font(size='5')
+                | English translation:-
+            p(align='center')
+              font(size='6')
+                | RABBIT
+        .w3-row.w3-padding-64
+          .w3-twothird.w3-container
+            h1.w3-text-teal Chapter 42
+            p
+              font(size='5')
+                | Malayalam letter:-
+            p(align='center')
+              font(size='8')
+                | &#x0D30
+            p
+              font(size='5')
+                | Corresponding English translation:-
+            p(align='center')
+              font(size='6')
+                | Ra
+            p
+              font(size='5')
+                | Example:-
+            p(align='center')
+              font(size='6')
+                | കസേര
+            p
+              font(size='5')
+                | Malayalam translation
+            p(align='center')
+              font(size='6')
+                | Kasera
+            p
+              font(size='5')
+                | English translation:-
+            p(align='center')
+              font(size='6')
+                | CHAIR
+        .w3-row.w3-padding-64
+          .w3-twothird.w3-container
+            h1.w3-text-teal Chapter 43
+            p
+              font(size='5')
+                | Malayalam letter:-
+            p(align='center')
+              font(size='8')
+                | &#x0D31
+            p
+              font(size='5')
+                | Corresponding English translation:-
+            p(align='center')
+              font(size='6')
+                | Rra
+            p
+              font(size='5')
+                | Example:-
+            p(align='center')
+              font(size='6')
+                | ലോറി
+            p
+              font(size='5')
+                | Malayalam translation
+            p(align='center')
+              font(size='6')
+                | Lorry
+            p
+              font(size='5')
+                | English translation:-
+            p(align='center')
+              font(size='6')
+                | TRUCK
+        .w3-row.w3-padding-64
+          .w3-twothird.w3-container
+            h1.w3-text-teal Chapter 44
+            p
+              font(size='5')
+                | Malayalam letter:-
+            p(align='center')
+              font(size='8')
+                | &#x0D32
+            p
+              font(size='5')
+                | Corresponding English translation:-
+            p(align='center')
+              font(size='6')
+                | La
+            p
+              font(size='5')
+                | Example:-
+            p(align='center')
+              font(size='6')
+                | മല
+            p
+              font(size='5')
+                | Malayalam translation
+            p(align='center')
+              font(size='6')
+                | Mala
+            p
+              font(size='5')
+                | English translation:-
+            p(align='center')
+              font(size='6')
+                | MOUNTAIN
+        .w3-row.w3-padding-64
+          .w3-twothird.w3-container
+            h1.w3-text-teal Chapter 45
+            p
+              font(size='5')
+                | Malayalam letter:-
+            p(align='center')
+              font(size='8')
+                | &#x0D33
+            p
+              font(size='5')
+                | Corresponding English translation:-
+            p(align='center')
+              font(size='6')
+                | Lla
+            p
+              font(size='5')
+                | Example:-
+            p(align='center')
+              font(size='6')
+                | തവള
+            p
+              font(size='5')
+                | Malayalam translation
+            p(align='center')
+              font(size='6')
+                | Thavala
+            p
+              font(size='5')
+                | English translation:-
+            p(align='center')
+              font(size='6')
+                | FROG
+        .w3-row.w3-padding-64
+          .w3-twothird.w3-container
+            h1.w3-text-teal Chapter 46
+            p
+              font(size='5')
+                | Malayalam letter:-
+            p(align='center')
+              font(size='8')
+                | &#x0D34
+            p
+              font(size='5')
+                | Corresponding English translation:-
+            p(align='center')
+              font(size='6')
+                | Zha
+            p
+              font(size='5')
+                | Example:-
+            p(align='center')
+              font(size='6')
+                | മഴ
+            p
+              font(size='5')
+                | Malayalam translation
+            p(align='center')
+              font(size='6')
+                | Mazha
+            p
+              font(size='5')
+                | English translation:-
+            p(align='center')
+              font(size='6')
+                | RAIN
+        .w3-row.w3-padding-64
+          .w3-twothird.w3-container
+            h1.w3-text-teal Chapter 47
+            p
+              font(size='5')
+                | Malayalam letter:-
+            p(align='center')
+              font(size='8')
+                | &#x0D35
+            p
+              font(size='5')
+                | Corresponding English translation:-
+            p(align='center')
+              font(size='6')
+                | Va
+            p
+              font(size='5')
+                | Example:-
+            p(align='center')
+              font(size='6')
+                | പാവ
+            p
+              font(size='5')
+                | Malayalam translation
+            p(align='center')
+              font(size='6')
+                | Paava
+            p
+              font(size='5')
+                | English translation:-
+            p(align='center')
+              font(size='6')
+                | DOLL
+        .w3-row.w3-padding-64
+          .w3-twothird.w3-container
+            h1.w3-text-teal Chapter 48
+            p
+              font(size='5')
+                | Malayalam letter:-
+            p(align='center')
+              font(size='8')
+                | &#x0D36
+            p
+              font(size='5')
+                | Corresponding English translation:-
+            p(align='center')
+              font(size='6')
+                | Sha
+            p
+              font(size='5')
+                | Example:-
+            p(align='center')
+              font(size='6')
+                | ശലഭം
+            p
+              font(size='5')
+                | Malayalam translation
+            p(align='center')
+              font(size='6')
+                | Shalabham
+            p
+              font(size='5')
+                | English translation:-
+            p(align='center')
+              font(size='6')
+                | BUTTERFLY
+        .w3-row.w3-padding-64
+          .w3-twothird.w3-container
+            h1.w3-text-teal Chapter 49
+            p
+              font(size='5')
+                | Malayalam letter:-
+            p(align='center')
+              font(size='8')
+                | &#x0D37
+            p
+              font(size='5')
+                | Corresponding English translation:-
+            p(align='center')
+              font(size='6')
+                | Shsha
+            p
+              font(size='5')
+                | Example:-
+            p(align='center')
+              font(size='6')
+                | ഷർട്ട്
+            p
+              font(size='5')
+                | Malayalam translation
+            p(align='center')
+              font(size='6')
+                | Shirt
+            p
+              font(size='5')
+                | English translation:-
+            p(align='center')
+              font(size='6')
+                | SHIRT
+        .w3-row.w3-padding-64
+          .w3-twothird.w3-container
+            h1.w3-text-teal Chapter 50
+            p
+              font(size='5')
+                | Malayalam letter:-
+            p(align='center')
+              font(size='8')
+                | &#x0D38
+            p
+              font(size='5')
+                | Corresponding English translation:-
+            p(align='center')
+              font(size='6')
+                | Sa
+            p
+              font(size='5')
+                | Example:-
+            p(align='center')
+              font(size='6')
+                | സർപ്പം
+            p
+              font(size='5')
+                | Malayalam translation
+            p(align='center')
+              font(size='6')
+                | Sarppam
+            p
+              font(size='5')
+                | English translation:-
+            p(align='center')
+              font(size='6')
+                | SNAKE
+        .w3-row.w3-padding-64
+          .w3-twothird.w3-container
+            h1.w3-text-teal Chapter 51
+            p
+              font(size='5')
+                | Malayalam letter:-
+            p(align='center')
+              font(size='8')
+                | &#x0D39
+            p
+              font(size='5')
+                | Corresponding English translation:-
+            p(align='center')
+              font(size='6')
+                | Ha
+            p
+              font(size='5')
+                | Example:-
+            p(align='center')
+              font(size='6')
+                | സിംഹം
+            p
+              font(size='5')
+                | Malayalam translation
+            p(align='center')
+              font(size='6')
+                | Simham
+            p
+              font(size='5')
+                | English translation:-
+            p(align='center')
+              font(size='6')
+                | LION
+        // Pagination
+        .w3-center.w3-padding-32
+          .w3-bar
+            a.w3-button.w3-hover-black(href='/temp1#') 1
+            a.w3-button.w3-hover-black(href='/temp2#') 2
+            a.w3-button.w3-hover-black(href='/temp3#') 3
+            a.w3-button.w3-hover-black(href='/temp4') 4
+            a.w3-button.w3-hover-black(href='/temp5') 5
+            a.w3-button.w3-hover-black(href='/temp6') 6
+            a.w3-button.w3-hover-black(href='/temp7') 7
+            a.w3-button.w3-hover-black(href='/temp8') 8
+            a.w3-button.w3-hover-black(href='/temp9') 9
+            a.w3-button.w3-hover-black(href='/temp10') 10
+            a.w3-button.w3-black(href='/temp11') 11
+        footer#myFooter
+          .w3-container.w3-theme-l2.w3-padding-32
+            h4 Footer
+          .w3-container.w3-theme-l1
+            p
+              | Powered by 
+              a(href='https://www.w3schools.com/w3css/default.asp', target='_blank') w3.css
+        // END MAIN
+      script.
+        function w3_open() {
+        document.getElementById("main").style.marginLeft = "25%";
+        document.getElementById("mySidebar").style.width = "25%";
+        document.getElementById("mySidebar").style.display = "block";
+        document.getElementById("openNav").style.display = 'none';
+        }
+        function w3_close() {
+        document.getElementById("main").style.marginLeft = "0%";
+        document.getElementById("mySidebar").style.display = "none";
+        document.getElementById("openNav").style.display = "inline-block";
+        }
+      #id01.w3-modal
+        .w3-modal-content.w3-card-4.w3-animate-zoom(style='max-width:600px')
+          .w3-center
+            br
+            span.w3-button.w3-xlarge.w3-hover-red.w3-display-topright(onclick="document.getElementById('id01').style.display='none'", title='Close Modal') ×
+            h1 Contact Form
+            form.w3-container(action='/action_page.php')
+              .w3-section
+                label
+                  b
+                input.w3-input.w3-border.w3-margin-bottom.w3-card-2(type='text', placeholder='Enter Name', name='usrname', required='')
+                label
+                  b
+                input.w3-input.w3-border.w3-card-2.w3-margin-bottom(type='Email address', placeholder='Email address', name='psw', required='')
+                label
+                  b
+                input.w3-input.w3-border.w3-card-2.w3-margin-bottom(type='Subject', placeholder='Subject', name='psw', required='')
+                label
+                  b
+                input.w3-input.w3-border.w3-card-2.w3-margin-bottom(type='Message', placeholder='Message', name='psw', required='')
+                button.w3-button.w3-block.w3-green.w3-section.w3-padding(onclick="document.getElementById('id01').style.display='none'", type='submit') Submit
+            .w3-container.w3-border-top.w3-padding-16.w3-light-grey
+              button.w3-button.w3-red(onclick="document.getElementById('id01').style.display='none'", type='button') Cancel
+
