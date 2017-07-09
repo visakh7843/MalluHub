@@ -7,6 +7,10 @@ html(lang='ml')
     meta(name='keywords', content='web design, affordable web design, professional web design')
     meta(name='author', content='Brad Traversy')
     title Mallu Hub | Welcome
+    link(rel='stylesheet', href='https://www.w3schools.com/w3css/4/w3.css')
+    link(rel='stylesheet', href='https://www.w3schools.com/lib/w3-theme-black.css')
+    link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Roboto')
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
     link(rel='stylesheet', href='/css/style.css')
     link(rel='stylesheet', href='./font/font-awesome/css/font-awesome.min.css')
   body
@@ -22,8 +26,6 @@ html(lang='ml')
               a(href='/') Home
             li
               a(href='/about') About
-            li
-              a(href='/services') Services
     section#showcase
       .container
         h1  നമസ്കാരം 
@@ -31,6 +33,9 @@ html(lang='ml')
         br
         br
         a.button_main(href='/temp1') Lets get started!!
+        br
+        br
+        button.button_main(onclick="document.getElementById('id01').style.display='block'") Contact Us!
     section#newsletter
       .container
         h1 Subscribe To Our Newsletter
@@ -56,4 +61,27 @@ html(lang='ml')
             | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet ultricies
     footer
       p MalluHub, Copyright © 2017
+    #id01.w3-modal
+      .w3-modal-content.w3-card-4.w3-animate-zoom(style='max-width:600px')
+        .w3-center
+          br
+          span.w3-button.w3-xlarge.w3-hover-red.w3-display-topright(onclick="document.getElementById('id01').style.display='none'", title='Close Modal') ×
+          h1 Contact Form
+          form.w3-container(action='/action_page.php')
+            .w3-section
+              label
+                b
+              input.w3-input.w3-border.w3-margin-bottom.w3-card-2(type='text', placeholder='Enter Name', name='usrname', required='')
+              label
+                b
+              input.w3-input.w3-border.w3-card-2.w3-margin-bottom(type='Email address', placeholder='Email address', name='psw', required='')
+              label
+                b
+              input.w3-input.w3-border.w3-card-2.w3-margin-bottom(type='Subject', placeholder='Subject', name='psw', required='')
+              label
+                b
+              input.w3-input.w3-border.w3-card-2.w3-margin-bottom(type='Message', placeholder='Message', name='psw', required='')
+              button.w3-button.w3-block.w3-green.w3-section.w3-padding(onclick="document.getElementById('id01').style.display='none'", type='submit') Submit
+          .w3-container.w3-border-top.w3-padding-16.w3-light-grey
+            button.w3-button.w3-red(onclick="document.getElementById('id01').style.display='none'", type='button') Cancel
 

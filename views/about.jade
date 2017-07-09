@@ -1,47 +1,77 @@
 doctype html
 html
+  title MalluHub
   head
-    meta(charset='utf-8')
-    meta(name='viewport', content='width=device-width')
-    meta(name='description', content='Affordable and professional web design')
-    meta(name='keywords', content='web design, affordable web design, professional web design')
-    meta(name='author', content='Brad Traversy')
-    title Acme Web Deisgn | About
-    link(rel='stylesheet', href='./css/style.css')
+    meta(charset='UTF-8')
+    link(rel='stylesheet', href='/css/aboutcss.css', <='', head='')
   body
     header
       .container
         #branding
           h1
-            span.highlight Acme
-            |  Web Design
+            span.highlight Mallu
+            | Hub
         nav
           ul
             li
-              a(href='/') Home
+              a(href='/index') Home
             li.current
               a(href='/about') About
             li
-              a(href='/services') Services
-    section#newsletter
-      .container
-        h1 Subscribe To Our Newsletter
-        form
-          input(type='email', placeholder='Enter Email...')
-          button.button_1(type='submit') Subscribe
-    section#main
-      .container
-        article#main-col
-          h1.page-title About Us
-          p
-            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec varius auctor lacus nec feugiat. Phasellus sit amet ex ipsum. Praesent pharetra tincidunt tempor. Etiam velit eros, dapibus eget porta in, lacinia et magna. Nam eget eros non orci consectetur congue at ac augue. Proin eget arcu in enim feugiat ultricies. Curabitur maximus metus nec metus pretium viverra at et orci. Integer hendrerit ante ut placerat cursus.
-          p.dark
-            | Aliquam eget pharetra diam. Nulla placerat lorem at turpis tempor, vel ultrices dui tincidunt. Proin quis egestas lorem. Mauris vehicula lectus odio, sit amet dictum justo feugiat a. Praesent id dictum lacus. Sed ullamcorper id erat ut dictum. Fusce porttitor lorem sapien, in aliquet sapien convallis et. Donec nec mauris nulla. Curabitur cursus semper odio, et hendrerit ante. Nunc at cursus ante. Maecenas gravida ligula ut efficitur suscipit. Nulla id turpis varius, pretium nunc sed, fermentum sem. Sed lacinia nunc non interdum pellentesque.
-        aside#sidebar
-          .dark
-            h3 What We Do
+              a(href='#') Contact
+    br
+    br
+    br
+    .row
+      .column
+        .card
+          img(src='./img/rohit.jpg', alt='Rohit', style='width:100%')
+          .container
+            h2 Rohit Narayanan
+            p.title CEO & Founder
+            p +91 884 848 7910
+            p rohitnrynn@gmail.com
             p
-              | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec varius auctor lacus nec feugiat. Phasellus sit amet ex ipsum. Praesent pharetra tincidunt tempor. Etiam velit eros, dapibus eget porta in, lacinia et magna
-    footer
-      p Acme Web Deisgn, Copyright © 2017
+              button.button Contact
+      .column
+        .card
+          img(src='./img/rizwan.jpg', alt='rizwan', style='width:100%')
+          .container
+            h2 Rizwan T S
+            p.title Art Director 
+            p +91 701 247 6914
+            p rizwan.fisat@gmail.com
+            p
+              button.button Contact
+      .column
+        .card
+          img(src='./img/sanley.jpg', alt='sanley', style='width:100%')
+          .container
+            h2 Sanley P Oommen
+            p.title Designer
+            p +91 952 633 4023
+            p sanleykuttu@gmail.com
+            p
+              button.button Contact
+    .row
+      .column
+        .card
+          img(src='./img/suryakanth.jpg', alt='Suryakanth', style='width:100%')
+          .container
+            h2 Suryakanth K R
+            p.title CEO & Founder
+            p +91 889 128 9260
+            p suryakanthrajkumar@gmail.com
+            p
+              button.button Contact
+      .column
+        .card
+          img(src='./img/visakh.jpg', alt='Visakh', style='width:100%')
+          .container
+            h2 Visakh Ajith
+            p.title Art Director
+            p +91 994 661 7843
+            p vishakajith@gmail.com.com
+            p
+              button.button Contact
 
